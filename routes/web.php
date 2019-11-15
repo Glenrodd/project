@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('layouts.app');
 });
+Route::resource('carrito','CarritoController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
